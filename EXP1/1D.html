@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery a img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #444;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+        .gallery a img:hover {
+            transform: scale(1.1);
+            border-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery with Thumbnails</h1>
+    <p>Click on any thumbnail to view the full-sized image.</p>
+
+    <div class="gallery">
+        <!-- Thumbnail 1 -->
+        <a href="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" target="_blank" title="Full Size Image 1">
+            <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="Image 1 Thumbnail" />
+        </a>
+
+        <!-- Thumbnail 2 -->
+        <a href="https://p1.hippopx.com/preview/653/702/399/rose-flower-flowers-red-rose-royalty-free-thumbnail.jpg" target="_blank" title="Full Size Image 2">
+            <img src="https://p1.hippopx.com/preview/653/702/399/rose-flower-flowers-red-rose-royalty-free-thumbnail.jpg" alt="Image 2 Thumbnail" />
+        </a>
+
+        <!-- Thumbnail 3 -->
+        <a href="https://i5.walmartimages.com/asr/1e0e705d-5d7e-4d66-b097-154e0d57de20_1.8b97509e999445226c2726fc2a5dbae1.jpeg" target="_blank" title="Full Size Image 3">
+            <img src="https://i5.walmartimages.com/asr/1e0e705d-5d7e-4d66-b097-154e0d57de20_1.8b97509e999445226c2726fc2a5dbae1.jpeg" alt="Image 3 Thumbnail" />
+        </a>
+
+        <!-- Thumbnail 4 -->
+        <a href="https://i5.walmartimages.com/asr/1e0e705d-5d7e-4d66-b097-154e0d57de20_1.8b97509e999445226c2726fc2a5dbae1.jpeg" target="_blank" title="Full Size Image 4">
+            <img src="https://i5.walmartimages.com/asr/1e0e705d-5d7e-4d66-b097-154e0d57de20_1.8b97509e999445226c2726fc2a5dbae1.jpeg" alt="Image 4 Thumbnail" />
+        </a>
+
+        <!-- Add more thumbnails as needed -->
+    </div>
+
+</body>
+</html>

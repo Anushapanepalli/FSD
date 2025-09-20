@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th {
+            width: 35%;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 7px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .buttons {
+            text-align: center;
+            padding-top: 15px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 0 15px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Registration Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th><label for="fullname">Full Name:</label></th>
+                <td><input type="text" id="fullname" name="fullname" required /></td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td><input type="password" id="password" name="password" required /></td>
+            </tr>
+            <tr>
+                <th><label for="age">Age:</label></th>
+                <td><input type="number" id="age" name="age" min="1" max="120" required /></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Date of Birth:</label></th>
+                <td><input type="date" id="dob" name="dob" required /></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required />
+                    <label for="male">Male</label> &nbsp;&nbsp;
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label> &nbsp;&nbsp;
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Hobbies:</th>
+                <td>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports" />
+                    <label for="sports">Sports</label> &nbsp;&nbsp;
+                    <input type="checkbox" id="music" name="hobbies" value="music" />
+                    <label for="music">Music</label> &nbsp;&nbsp;
+                    <input type="checkbox" id="reading" name="hobbies" value="reading" />
+                    <label for="reading">Reading</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="country">Country:</label></th>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="about">About Yourself:</label></th>
+                <td><textarea id="about" name="about" rows="4" placeholder="Write something about yourself..."></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

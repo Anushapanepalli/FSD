@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Semantic Tags Example</title>
+    <style>
+        header, footer, nav, main, aside, section, article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        header {
+            background-color: #f2f2f2;
+        }
+        nav ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        figure {
+            max-width: 300px;
+        }
+        span.highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <header>
+            <h2>Understanding Semantic HTML</h2>
+            <p>By <span class="highlight">John Doe</span></p>
+        </header>
+        <figure>
+            <img src="https://media.istockphoto.com/id/1069489822/photo/she-gets-it-done-whatever-the-hour.jpg?s=612x612&w=0&k=20&c=8npXMsGmD_ae2VSI72dIn1fWhXkX9GfXzorQZXWZnrk=" alt="Semantic HTML Example" />
+            <figcaption>An example image explaining semantic HTML</figcaption>
+        </figure>
+        <section>
+            <p>Semantic HTML uses meaningful tags to clearly define parts of a webpage.</p>
+            <p>For example, the <code>&lt;article&gt;</code> tag represents a self-contained composition.</p>
+        </section>
+        <footer>
+            <p>Published on September 20, 2025</p>
+        </footer>
+    </article>
+
+    <aside>
+        <h3>Related Links</h3>
+        <ul>
+            <li><a href="#">HTML5 Guide</a></li>
+            <li><a href="#">CSS Basics</a></li>
+            <li><a href="#">Web Accessibility</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+</footer>
+
+<div>
+    <p>This is a generic container using <code>&lt;div&gt;</code> tag.</p>
+</div>
+
+</body>
+</html>

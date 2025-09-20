@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Styling Types - Medium Complexity</title>
+    <style>
+        #internal-section {
+            background-color: #d1f2eb;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .internal-text {
+            font-size: 18px;
+            color: #117a65;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <h1 class="external-title">Welcome to the CSS Styles Demo</h1>
+
+    <div style="background-color: #ffcccb; padding: 15px; max-width: 600px; margin: 20px auto; border-radius: 6px;">
+        <p style="color: #900; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+            This text is styled with <strong>inline CSS</strong> — dark red text on light red background, bold and monospace font.
+        </p>
+    </div>
+
+    <section id="internal-section">
+        <p class="internal-text">
+            This paragraph uses <strong>internal CSS</strong> — teal text with increased font size, inside a light teal box.
+        </p>
+    </section>
+
+    <div class="external-box">
+        <p>
+            This container and text use <strong>external CSS</strong> — blue border, soft blue background, and centered heading.
+        </p>
+    </div>
+
+</body>
+</html>
