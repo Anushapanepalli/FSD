@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Input Methods</title>
+</head>
+<body>
+    <h2>Taking Input</h2>
+
+    <script>
+        // Using prompt
+        var name = prompt("Enter your name:");
+        alert("Hello, " + name);
+
+        // Using input field
+        document.write('<input type="text" id="txtName" placeholder="Enter your name">');
+        document.write('<button onclick="showName()">Submit</button>');
+
+        function showName() {
+            var inputName = document.getElementById("txtName").value;
+            alert("You entered: " + inputName);
+        }
+    </script>
+</body>
+</html>

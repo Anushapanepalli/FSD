@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Color References</title>
+    <style>
+        /* Named Color */
+        .named {
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        /* Hexadecimal */
+        .hex {
+            color: #ffffff;
+            background-color: #ff5733;
+            padding: 10px;
+        }
+
+        /* RGB */
+        .rgb {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 128, 0); /* green */
+            padding: 10px;
+        }
+
+        /* RGBA (with transparency) */
+        .rgba {
+            color: black;
+            background-color: rgba(255, 0, 0, 0.5); /* red with 50% opacity */
+            padding: 10px;
+        }
+
+        /* HSL */
+        .hsl {
+            color: black;
+            background-color: hsl(200, 100%, 50%); /* bright blue */
+            padding: 10px;
+        }
+
+        /* HSLA */
+        .hsla {
+            color: black;
+            background-color: hsla(120, 100%, 25%, 0.5); /* dark green with 50% opacity */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">CSS Color Reference Methods</h1>
+
+    <p class="named">This uses a <b>Named Color</b> (blue).</p>
+    <p class="hex">This uses a <b>Hexadecimal Color</b> (#ff5733).</p>
+    <p class="rgb">This uses an <b>RGB Color</b> (rgb(0,128,0)).</p>
+    <p class="rgba">This uses an <b>RGBA Color</b> (rgba(255,0,0,0.5)).</p>
+    <p class="hsl">This uses an <b>HSL Color</b> (hsl(200,100%,50%)).</p>
+    <p class="hsla">This uses an <b>HSLA Color</b> (hsla(120,100%,25%,0.5)).</p>
+</body>
+</html>

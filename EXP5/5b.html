@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fullscreen Flipped Background</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            /* Background image */
+            background-image: url("https://www.shutterstock.com/image-photo/blue-morpho-butterfly-on-white-600nw-2489257143.jpg");
+
+            /* Cover entire screen */
+            background-size: cover;
+
+            /* Position halfway down (center horizontally, 50% vertically) */
+            background-position: center 50%;
+
+            /* Don’t repeat */
+            background-repeat: no-repeat;
+
+            /* Keep fixed during scroll */
+            background-attachment: fixed;
+
+            /* Flip the whole background horizontally */
+            transform: scaleX(1);
+        }
+
+        /* Reset flip for page content */
+        body * {
+            transform: scaleX(1);
+        }
+
+        /* Example content styling */
+        .content {
+            text-align: center;
+            color: white;
+            padding: 100px;
+            font-family: Arial, sans-serif;
+            background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Fullscreen Flipped Background</h1>
+        <p>This page demonstrates a background image that is flipped horizontally, 
+        covers the full screen, and remains fixed while scrolling.</p>
+    </div>
+</body>
+</html>
